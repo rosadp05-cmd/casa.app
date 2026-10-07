@@ -39,7 +39,7 @@
     <form method="dialog" id="task-form">
       <div class="dialog-head">
         <h2>Nuova attività</h2>
-        <button value="cancel" class="icon-btn">✕</button>
+        <button type="button" id="close-task" class="icon-btn" aria-label="Chiudi">✕</button>
       </div>
       <label>Nome attività
         <input id="task-name" required placeholder="Es. Pulire filtro lavatrice">
@@ -75,7 +75,7 @@
       <label>Note <span class="muted">(facoltative)</span>
         <textarea id="task-notes" placeholder="Es. usare anticalcare..."></textarea>
       </label>
-      <button class="primary full" value="default" id="save-task">Salva</button>
+      <button type="submit" class="primary full" id="save-task">Salva</button>
     </form>
   </dialog>
 
@@ -83,6 +83,6 @@
     <div id="detail-content"></div>
   </dialog>
 
-  <script src="app.js?v=6"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>

@@ -96,3 +96,30 @@ html,body{height:100%;overflow:hidden}
 .fab{
   bottom:calc(72px + max(8px,env(safe-area-inset-bottom)));
 }
+
+
+/* v8: normal scale + true fixed bottom controls, never over task rows */
+html,body{height:auto;min-height:100%;overflow:auto}
+#app{height:auto;min-height:100vh;padding-bottom:118px;display:block;overflow:visible}
+.topbar{max-width:760px}
+#content{
+  display:block;
+  overflow:visible;
+  min-height:auto;
+  padding-bottom:150px;
+}
+.bottom-nav{
+  position:fixed;
+  left:12px;right:12px;
+  bottom:max(10px,env(safe-area-inset-bottom));
+  z-index:30;
+}
+.fab{
+  position:fixed;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:calc(58px + max(10px,env(safe-area-inset-bottom)));
+  z-index:31;
+}
+/* Reserve a clean zone before the fixed controls */
+#content:after{content:"";display:block;height:100px}

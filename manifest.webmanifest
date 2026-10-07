@@ -1,0 +1,17 @@
+{
+  "name": "Casa",
+  "short_name": "Casa",
+  "start_url": "/casa.app/",
+  "scope": "/casa.app/",
+  "display": "standalone",
+  "background_color": "#F7F1E8",
+  "theme_color": "#F7F1E8",
+  "icons": [
+    {
+      "src": "apple-touch-icon-v2.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

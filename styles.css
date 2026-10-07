@@ -47,3 +47,33 @@ input,select,textarea{width:100%;border:1px solid var(--line);background:var(--c
 .empty{padding:24px;text-align:center;color:var(--muted);font-size:12px}
 .today-intro{display:flex;justify-content:space-between;align-items:flex-end;margin:5px 1px 14px}.today-date{font-size:11px;text-transform:none;letter-spacing:0;color:var(--muted)}.today-note{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;font-size:18px;font-weight:600;margin-top:3px;color:var(--ink)}
 @media (min-width:700px){.room-grid{grid-template-columns:repeat(2,1fr)}.fab{right:calc((100vw - 760px)/2 + 20px)}.bottom-nav{max-width:720px;margin:auto}}
+
+/* Selected concept: airy blue home */
+.topbar{padding:28px 22px 14px;align-items:center}
+.eyebrow{font-size:34px;font-weight:700;line-height:1;color:#10243D;margin:0;text-transform:none;letter-spacing:-.04em}
+#page-title{font-size:17px!important;font-weight:400!important;color:#6F7782!important;letter-spacing:-.01em!important;margin-top:8px!important;text-transform:capitalize}
+.icon-btn{width:48px;height:48px;background:#fff;border:1px solid #EEF1F4;box-shadow:0 8px 24px rgba(31,65,98,.06)}
+#content{padding:8px 21px 38px}
+.home-tabs{display:grid;grid-template-columns:1fr 1.35fr .85fr;background:#F0F4F8;border-radius:22px;padding:3px;margin:6px 0 15px}
+.home-tabs button{border:0;background:transparent;padding:11px 5px;border-radius:19px;font-size:13px;color:#10243D}
+.home-tabs button.active{background:#559FE8;color:#fff;box-shadow:0 5px 14px rgba(75,155,232,.22)}
+.today-hero{height:112px;border-radius:24px;background:linear-gradient(120deg,#EAF4FE 0%,#F7FAFD 60%,#F2F7F1 100%);display:flex;align-items:center;justify-content:space-between;overflow:hidden;padding:18px 18px 18px 20px;box-shadow:0 8px 28px rgba(31,65,98,.05);margin-bottom:13px}
+.today-hero>div:first-child{display:flex;flex-direction:column}
+.today-hero b{font-size:42px;line-height:1;color:#10243D}
+.today-hero span{font-size:15px;margin-top:8px;color:#33465B}
+.hero-plant{font-size:62px;line-height:1;filter:saturate(.7);transform:translate(5px,9px)}
+.summary{gap:10px;margin:0 0 24px}
+.summary .stat{padding:13px 11px 14px;text-align:left;border-radius:20px;min-width:0}
+.stat-icon{display:flex;width:31px;height:31px;border-radius:10px;align-items:center;justify-content:center;font-size:16px;margin-bottom:7px}
+.stat-icon.blue{background:#EAF4FE;color:#3D91E5}.stat-icon.coral{background:#FFF0EA;color:#F07D5B}.stat-icon.green{background:#EAF6F0;color:#43A97E}
+.stat b{font-size:24px;line-height:1.1}.stat small{display:block;font-size:12px;margin-top:3px;white-space:nowrap}
+.section{margin:23px 0}.section-title{font-size:21px}.secondary{font-size:13px}
+.card{border-radius:22px}
+.task-row{padding:13px 14px;gap:10px;min-height:66px}
+.check{width:27px;height:27px}
+.task-icon{width:32px;height:32px;border-radius:10px;background:#EEF6FE;color:#345D7D;display:flex;align-items:center;justify-content:center;font-size:15px;flex:0 0 auto}
+.task-row:nth-child(2n) .task-icon{background:#FFF4EC;color:#72543E}.task-row:nth-child(3n) .task-icon{background:#EEF6F0;color:#496052}
+.task-name{font-size:14px}.task-meta{font-size:11px}
+.bottom-nav{height:72px;border-radius:25px}
+.fab{bottom:82px;width:60px;height:60px;background:#3E91E5;border-width:5px}
+@media(max-width:390px){.stat small{font-size:10px}.today-hero{height:105px}.eyebrow{font-size:32px}}
